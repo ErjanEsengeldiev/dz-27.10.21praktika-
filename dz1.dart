@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  task4();
+  print(task2v1(2001, 20));
 }
 
 String task1(String stroka, int chislo, bool istina) {
@@ -10,8 +10,8 @@ String task1(String stroka, int chislo, bool istina) {
 }
 
 String task2v1(int birthday, int age) {
-  int DateTime = 2021;
-  int minus = DateTime - birthday;
+  int time = DateTime.now().year;
+  int minus = time - birthday;
   String? res;
   if (minus == age) {
     res = 'denrojden bylo';
@@ -21,8 +21,8 @@ String task2v1(int birthday, int age) {
 }
 
 String task2v2(int birthday, int age) {
-  int DateTime = 2021;
-  int minus = DateTime - birthday;
+  int time = DateTime.now().year;
+  int minus = time - birthday;
   String? res;
   bool sravneniye = minus == age;
   switch (sravneniye) {
