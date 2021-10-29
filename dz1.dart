@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  print(task2v1(2001, 20));
+  task4();
 }
 
 String task1(String stroka, int chislo, bool istina) {
@@ -51,12 +51,10 @@ String task3(List a) {
 
 void task4() {
   String stop = '';
-  while (stop != 'stop') {
+  while (stop != 'stop' || stop != 'стоп') {
     print('Напишите число');
     dynamic chislo = stdin.readLineSync();
-    if (chislo ==
-        'stop') //" || chislo == 'стоп')  ПОЧЕМУ НЕ РАДОТАЕТ С РУССКИМ "СТОП"? НЕ РАССПАЗНАЕТ И НЕ БРЕЙКАЕТЮ
-    {
+    if (chislo == 'stop' || chislo == 'стоп') {
       break;
     }
     int chislo1 = int.parse(chislo);
